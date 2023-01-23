@@ -1,0 +1,1 @@
+You can see my rsschool-cv [here] (gh repo clone AngEL050492/rsschool-cv)

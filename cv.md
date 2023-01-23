@@ -1,5 +1,5 @@
 # Angelina Polyakova
-***
+
 ## Contacts
 * Phone: +375 (29)210-06-60
 * E-mail: angelya.050492@gmail.com
