@@ -16,6 +16,7 @@ I am 30 years old.I work today in Lukoil. I want to change the sphere of activit
 ## Education
 - Belarusian State University (management);
 - Java courses in Overone IT school
+## Code example
 ```
     public static void main(String[] args) {
         int number=0;
@@ -27,3 +28,5 @@ I am 30 years old.I work today in Lukoil. I want to change the sphere of activit
                 }
             }
 ```
+## Language
+English - level A2
