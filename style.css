@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.content {
+    width: 60%;
+}
+
+header {
+    width: 100%;
+    position: fixed;    
+    font-family:'Inter', sans-serif;  
+}
+
+h1 {
+    display: block;
+    width: 300px;
+    margin: 30px auto 15px 100px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 45px;    
+    text-transform: uppercase;
+    background-image: linear-gradient(#f3ec78, #af4261);
+    background-size: 100%;
+  /* background-repeat: repeat; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  /* -moz-background-clip: text; */
+  /* -moz-text-fill-color: transparent; */
+  text-indent: 20%;
+   
+}
+
+.mini__title {
+    display: block;
+    margin-bottom: 35px;
+    font-family: 'Inter', sans-serif;
+    text-align: end;
+    font-size: 30px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.title {
+    margin-bottom: 28px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.cv__navigation {
+    width: 60%;   
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 28px;    
+    box-shadow: 3px 3px 5px #c0c0c048;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 50px;
+    background-color: #ffffff;    
+}
+
+li {
+    list-style: none;
+}
+
+.header__link {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    font-weight: 400;
+    background-image: linear-gradient(#000000e0, #d3184d);
+    background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+#education {
+    width: 593px;
+    margin:235px auto 60px 105px;
+}
+#skills , #code , #languages {
+    width: 593px;
+    margin:0 auto 60px 105px;  
+}
+
+.lines {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5px;
+}
+
+.line_1 {
+    margin-top: 36px;
+    height: 100px;
+    width: 1px;
+    background: #000000;
+}
+
+.line_2 {
+    height: 377px;
+    width: 1px;
+    margin-top: 98px;
+    background: #000000;    
+}
+
+.line_3 {
+    height: 896px;
+    width: 1px;
+    margin-top: 50px;
+    background: #000000;
+}
+
+.sidebar {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+#contacts {
+    width: 288px;
+    margin: 50px auto 50px auto;
+}
+
+#profile {
+    width: 288px;
+}
+
+#skills img {
+    width: 40px;
+    height: 40px;
+}
+
+pre {
+    margin-left: -100px;
+}

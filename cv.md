@@ -18,7 +18,6 @@ I am 30 years old.I work today in Lukoil. I want to change the sphere of activit
 - Java courses in Overone IT school
 ## Code example
 ```
-    public static void main(String[] args) {
         int number=0;
         for (int i = 1; i <= 4; i++) {
             for (int j = 1; j <= 4; j++) {

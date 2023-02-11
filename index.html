@@ -4,9 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Playfair+Display&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+<body> 
+    <main>
+        <div class="content">   
+            <header>
+                <nav class="cv__navigation">
+                    <ul class="menu">
+                        <li class="header__link"><a href="#contacts">Contacts</a></li>
+                        <li class="header__link"><a href="#profile">Profile</a></li>
+                        <li class="header__link"><a href="#skills">Skills</a></li>
+                        <li class="header__link"><a href="#edukation">Education</a></li>
+                        <li class="header__link"><a href="#code">Code example</a></li>
+                        <li class="header__link"><a href="#languages">Languages</a></li>
+                    </ul>
+                </nav>            
+            </header>       
+            <section id="education">
+                <h2 class="title">Education</h2>
+                <ul class="knowlege">
+                    <li>Belarusian State University (management)</li>
+                    <li>Java courses in Overone IT school</li>
+                </ul>
+            </section>
+            <section id="skills">
+                <h2 class="title">Skills</h2>
+                <img src="img/css.svg" alt="css">
+                <img src="img/html.svg" alt="html">
+                <img src="img/gitHub.svg" alt="gitHub">
+                <img src="img/bootstrap.svg" alt="bootstrap">
+                <img src="img/git.svg" alt="git">
+                <img src="img/figma.svg" alt="figma">
+            </section>
+            <section id="code">
+                <h2 class="title">Code Example</h2>
+                <pre>
+                    <code>
+                        int number=0;
+                for (int i = 1; i <= 4; i++) {
+                    for (int j = 1; j <= 4; j++) {
+                        for (int k = 1; k <= 4; k++) {
+                            if (k!=i && k!=j && i!=j){number++;
+                            System.out.println(i + "" + j +"" + k);}
+                        }
+                    }
+                    </code>
+                </pre>
+            </section>
+            <section id="languages">
+                <h2 class="title">Languages</h2>
+                <p>English - level A2</p>
+            </section>
+        </div> 
+        <div class="lines">
+            <div class="line_1"></div>
+            <div class="line_2"></div>
+            <div class="line_3"></div>
+        </div>
+        <div class="sidebar">
+            <div class="header__title">
+                <h1>Angelina Polyakova</h1>
+                <p class="mini__title">Future front-end developer</p>
+            </div>
+            <div class="photo">
+                <img src="file:///D:/RSS/logo/unnamed.webp" alt="photo">
+            </div>
+            <section id="contacts">
+                <h2 class="title">Contacts</h2>
+                <ul class="contact__list">
+                    <li class="my__contact">Adress: Belarus, Vitebsk</li>
+                    <li class="my__contact">phone: +375 (29) 210-06-60</li>
+                    <li class="my__contact">Email: <a href="mailto:angelya.050492@gmail.com">angelya.050492@gmail.com</a></li>
+                    <li class="my__contact">GitHub: <a href="https://github.com/AngEL050492" target="_blank" rel="noopener noreferrer">AngEL050492</a></li>
+                </ul>
+                <ul></ul>
+            </section>
+            <section id="profile">
+                <h2 class="title">Profile</h2>
+                <p>I am 30 years old.I work today in Lukoil. I want to change the sphere of activity, which is why I signed up for this course.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab aliquam itaque corporis! Consectetur, voluptatem! Doloribus obcaecati, et, sint error porro optio maxime illo inventore nisi alias, at ad ea quos?</p>
+            </section>
+        </div>
+    </main>
 </body>
 </html>
