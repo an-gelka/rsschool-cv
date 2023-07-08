@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Playfair+Display&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-container container">
+        <div class="header-nuvbur">
+          <!-- <span></span> -->
+        </div>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-item"><a href="#contacts" class="header-link">Contacts</a></li>
+            <li class="header-item"><a href="#profile" class="header-link">Profile</a></li>
+            <li class="header-item"><a href="#skills" class="header-link">Skills</a></li>
+            <li class="header-item"><a href="#edukation" class="header-link">Education</a></li>
+            <li class="header-item"><a href="#code" class="header-link">Code example</a></li>
+            <li class="header-item"><a href="#languages" class="header-link">Languages</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page">
+      <div class="page-container container">
+        <div class="content">
+          <div class="content-container">
+            <div class="content-line">
+              <div class="line-4"></div>
+            </div>
+            <section id="education">
+              <h2 class="title">Education</h2>
+              <ul class="content-list">
+                <li class="content-item">
+                  <div class="square"></div>Vitebsk State Technological college
+                </li>
+                <li class="content-item">
+                  <div class="square"></div>Belarusian State University (management)
+                </li>
+                <li class="content-item">
+                  <div class="square"></div>RS School JS/FE Pre-School (in progress)
+                </li>
+              </ul>
+            </section>
+            <section id="skills">
+              <h2 class="title">Skills</h2>
+              <ul class="skills-list">
+                <li class="skills-item"><img src="assets/svg/css.svg" alt="css">
+                  <p>css</p>
+                </li>
+                <li class="skills-item"><img src="assets/svg/html.svg" alt="html">
+                  <p>html</p>
+                </li>
+                <li class="skills-item"><img src="assets/svg/git.svg" alt="git">
+                  <p>Git</p>
+                </li>
+                <li class="skills-item"><img src="assets/svg/gitHub.svg" alt="gitHub">
+                  <p>GitHub</p>
+                </li>
+                <li class="skills-item"><img src="assets/svg/bootstrap.svg" alt="bootstrap">
+                  <p>bootstrap</p>
+                </li>
+                <li class="skills-item"><img src="assets/svg/figma.svg" alt="figma">
+                  <p>figma</p>
+                </li>
+              </ul>
+            </section>
+            <section id="code">
+              <h2 class="title">Code Example</h2>
+              <pre class="code-container">
+                <code>
+btnElement = document.querySelector(".btn");
+resultElement = document.querySelector(".result");
+const products = document.querySelectorAll(".item");
+inputSurname = document.querySelector('[name="surname"]');
+inputName = document.querySelector('[name="name"]');
+
+function totalSumm() {
+    sum = 0;
+    for (const product of products) {
+        let checkboxElement = product.querySelector('input[type="checkbox"]');
+        let amountElement = product.querySelector('input[type="number"]');        
+            if (checkboxElement.checked) {
+                if (amountElement.value <= 0 || amountElement.value > 100) {
+                amountElement.value = 1;
+                }
+            sum += parseInt(checkboxElement.dataset.price) * parseInt(amountElement.value);        
+            }        
+            else {       
+            amountElement.value = 0;        
+            }  
+        resultElement.textContent = sum; }    
+    }    
+    btnElement.addEventListener("click" , function(){        
+        orderList = [];
+        for (const product of products) {
+            let choiceElement = product.querySelector('[name="menu"]');
+            let amount = product.querySelector('[name="quantity"]');
+            if (choiceElement.checked) {
+            firstSum = parseInt(choiceElement.dataset.price) * parseInt(amount.value);
+            foodName = choiceElement.dataset.goods;
+            position = `${foodName} - ${amount.value} шт. = ${firstSum} р.`;
+            orderList.push(position);
+            }
+        }          
+        if (orderList == "") {
+            alert("Товар не выбран!");
+        } else {
+            alert (
+            `Заказчик: ${inputSurname.value} ${inputName.value}\n\nВаш заказ:\n${orderList.join("\n")}\n\nИтого: ${resultElement.textContent} руб.`
+            );
+        }
+        })
+                </code>
+              </pre>
+            </section>
+            <section id="languages">
+              <h2 class="title">Languages</h2>
+              <ul class="content-list">
+                <li class="content-item">
+                  <div class="square"></div>Russian - native
+                </li>
+                <li class="content-item">
+                  <div class="square"></div>English - level A2
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <div class="lines">
+          <div class="line_1"></div>
+          <div class="line_2"></div>
+          <div class="line_3"></div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar-heading">
+            <h1 class="heading">Angelina Polyakova</h1>
+            <p class="subtitle">Future front-end developer</p>
+          </div>
+          <div class="sidebar-container">
+            <div class="avatar">
+              <img class="avatar-img" src="assets/img/unnamed.webp" alt="photo">
+            </div>
+            <section id="contacts" class="contact">
+              <h2 class="title">Contacts</h2>
+              <ul class="contact-list">
+                <li class="contact-item"><span class="contact-text-bold">Adress:</span>Belarus, Vitebsk</li>
+                <li class="contact-item"><span class="contact-text-bold">Phone:</span><a href="tel:+375292100660">+375(29)210&#8209;06&#8209;60</a> </li>
+                <li class="contact-item"><span class="contact-text-bold">GitHub:</span><a
+                    href="https://github.com/an-gelka" class="contact-link" target="_blank"
+                    rel="noopener noreferrer">an-gelka</a></li>
+                <li class="contact-item"><span class="contact-text-bold">Discord:</span><a
+                    href="https://discord.com/users/516715744646660106" class="contact-link">an-gelka#2009</a></li>
+              </ul>
+            </section>
+            <section id="profile" class="profile">
+              <h2 class="title">Profile</h2>
+              <p>Recently, I finally decided that it was time to change something in my life and to start changing my
+                field of activity. The idea of going into IT has been haunting me for a long time, I thought for a long
+                time what direction to choose and eventually settled on Frontend development.</p>
+              <p>I'm new to IT, but I believe that my purposefulness and desire to learn will help me become an
+                experienced Frontend developer in the future.</p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="footer-container container">
+      <div class="footer-line"></div>
+      <ul class="footer-social">
+        <li class="footer-item"><a href="https://github.com/an-gelka"><img src="assets/svg/gitHub.svg" alt="gitHub"></a>
+        </li>
+        <li class="footer-item">
+          <p>created in 2023</p>
+        </li>
+        <li class="footer-item"><a href="https://rs.school/js/"><img src="assets/svg/rss.svg" alt="RSS"></a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
