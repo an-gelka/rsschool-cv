@@ -1,6 +1,6 @@
 # ***ANGELINA POLYAKOVA***
 ## *FUTURE FRONT-END DEVELOPER*
-![avatar](assets/img/3.jpg)
+![avatar](assets/img/2.jpg)
 ### *Contacts*
 * Phone: +375 (29)000-00-00
 * E-mail: angelya.050492@gmail.com
