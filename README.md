@@ -1,2 +1,2 @@
 #### Markdown & Git:
-* https://an-gelka.github.io/rsschool-cv/CV
+* https://an-gelka.github.io/rsschool-cv/cv
